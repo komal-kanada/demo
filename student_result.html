@@ -1,0 +1,223 @@
+<html>
+<head>
+	<title>Student Data:</title>
+</head>
+<script>
+function data()
+{
+	 var a = document.student.fname.value;
+	 document.getElementById("first_name").innerHTML=a;
+	 var b = document.student.sname.value;
+	 document.getElementById("sec_name").innerHTML = b;
+	 var c = document.student.suname.value;
+	 document.getElementById("sur_name").innerHTML = c;
+	 var d = document.student.course.value;
+	 document.getElementById("course_name").innerHTML = d;
+	 
+	 var e = document.student.daa.value;
+	 document.getElementById("s_daa").innerHTML=e;
+	 var f = document.student.ai.value;
+	 document.getElementById("s_ai").innerHTML = f;
+	 var g = document.student.sqa.value;
+	 document.getElementById("s_sqa").innerHTML = g;
+	 var h = document.student.dtt.value;
+	 document.getElementById("s_dtt").innerHTML = h;
+	 var i = document.student.bs.value;
+	 document.getElementById("s_bs").innerHTML = h;
+
+ 
+ 
+	var txt1 = eval(parseFloat(document.student.daa.value) + parseFloat(document.student.ai.value)+ 
+					parseFloat(document.student.sqa.value) + parseFloat(document.student.dtt.value)
+					+ parseFloat(document.student.bs.value));
+					document.getElementById("total").innerHTML = txt1;
+
+	var txt2 =eval(parseFloat(txt1*100)/500);
+	document.getElementById("percent").innerHTML = txt2.toFixed(2)+"%";
+
+switch(true)
+{
+	case(txt2>=80):
+	document.getElementById("grade").innerHTML="A1";
+	break;
+	case(txt2>=70):
+	document.getElementById("grade").innerHTML="A";
+	break;
+	case(txt2>=60):
+	document.getElementById("grade").innerHTML="B";
+	break;
+	case(txt2>=50):
+	document.getElementById("grade").innerHTML="C";
+	break;
+	case(txt2>=40):
+	document.getElementById("grade").innerHTML="D";
+	break;
+	case(txt2<40):
+	document.getElementById("grade").innerHTML="Fail";
+	break;
+}
+	
+ }
+</script>
+<body>
+<div>
+	<fieldset>
+	<fieldset>
+	<legend>PERSONAL DETAIL</legend>
+	<table>
+	<form name="student">
+		<tr>
+		<td>
+			First Name:
+		</td>
+			<td>
+			<input type="text" name="fname"/> </br>
+			</td>
+		</tr>
+		<tr>
+		<td>
+			Second Name:
+		</td>
+			<td>
+			<input type="text" name="sname"/> </br>
+			</td>
+		</tr>
+		<tr>
+		<td>
+			SurName:
+		</td>
+			<td>
+			<input type="text" name="suname"/> </br>
+			</td>
+		</tr>
+		<table>
+	<div>
+		<tr>
+			<td>
+				Course:
+			</td>
+			<td>
+			<input type="text" name="course"/> </br>
+			</td>
+			
+		</tr>
+	</div><!--for drop down-->
+	</table>
+	</table>
+	</fieldset>
+	<br/>
+	<fieldset>
+	<table>
+		<legend>SUBJECT MARK</legend>
+		<tr>
+			<td>
+			Data Analysis and Design:
+			</td>
+			<td>
+			<input type="text" name="daa"/>  </br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			Artificial Intelligence:
+			</td>
+			<td>
+			<input type="text" name="ai"/> </br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			Software Quality Analysis:
+			</td>
+			<td>
+			<input type="text" name="sqa"/> </br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			Digital Technology Trends:
+			</td>
+			<td>
+			<input type="text" name="dtt"/> </br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			Basic Statastics:
+			</td>
+			<td>
+			<input type="text" name="bs"/> </br>
+			</td>
+		</tr>
+	</table>
+	
+	
+	<div class="btn">
+		<button type="button" onclick="data();">Submit</button>
+		<button type="reset" name="reset">Reset</button>
+	</div>	
+	</fieldset>
+</form>
+	
+<div class="stud_info">
+   <table border="1" width="240">
+    <tr>
+     <th colspan="2" width="135">Student Information</th>
+    </tr>
+    <tr>
+     <td >First Name:</td><td><FONT face="arial" id="first_name"></FONT></td>
+    </tr>
+    <tr>
+     <td>Second Name:</td><td><FONT face="arial" id="sec_name"></FONT></td>
+    </tr>
+    <tr>
+     <td>surName:</td><td><FONT face="arial" id="sur_name"></FONT></td>
+    </tr>
+    <tr>
+     <td>Course:</td><td><FONT face="arial" id="course_name"></FONT></td>
+    </tr>
+   <br/>
+   
+    <tr>
+     <th colspan="2" width="135">Subject Remarks</th>
+    </tr>
+    <tr>
+     <td>Data Analysis and Design:</td><td><font face="arial" id="s_daa"></font></td>
+    </tr>
+    <tr>
+     <td>Artificial Intelligence:</td><td><font face="arial" id="s_ai"></font></td>
+    </tr>
+    <tr>
+     <td>Software Quality Analysis:</td><td><font face="arial" id="s_sqa"></font></td>
+    </tr>
+    <tr>
+     <td>Digital Technology Trends:</td><td><font face="arial" id="s_dtt"></font></td>
+	</tr>
+    <tr>
+     <td>Basic Statastics:</td><td><font face="arial" id="s_bs"></font></td>
+	</tr>
+    
+    <tr>
+     <th colspan="2" width="140">Subject Remarks</th>
+    </tr>
+    <tr>
+     <td width="135">Total:</td><td><font face="arial" id="total"></font></td>
+    </tr>
+    <tr>
+     <td width="135">Percentage:</td><td><font face="arial" id="percent"></font></td>
+    </tr>
+    <tr>
+     <td width="135">Grade:</td><td><font face="arial" id="grade"></font></td>
+    </tr>
+    
+   </table>
+   </div>
+  
+ </div>
+</div>
+	
+	
+	
+	
+</body>
+</html>
