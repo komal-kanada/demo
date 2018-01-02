@@ -1,0 +1,78 @@
+    1  sudo apt update
+    2  sudo apt install skype
+    3  s2y*e
+    4  sudo apt install skype
+    5  sat apt insatll skype
+    6  sudo apt update
+    7  sudoo apt install skypeforlinux
+    8  sudo apt install skypeforlinux
+    9  sudo apt install skype
+   10  apt -cache policy skype
+   11  sudo apt update
+   12  sudo apt install skypeforlinux
+   13  ls
+   14  cd Downloads/
+   15  ls
+   16  sudo gdebi skype-4-3-0-37-multi-ubu.deb
+   17  sudo apt -get skype-4-3-0-37-multi-ubu.deb
+   18  sudo apt install  skype-4-3-0-37-multi-ubu.deb
+   19  dpkg -i skype-4-3-0-37-multi-ubu.deb 
+   20  sudo dpkg -i skype-4-3-0-37-multi-ubu.deb 
+   21  sudo apt-get remove skype
+   22  dpkg -i skype-4-3-0-37-multi-ubu.deb 
+   23  sudo dpkg -i skype-4-3-0-37-multi-ubu.deb 
+   24  sudo apt-get -f install
+   25  sudo apt-get update
+   26  sudo apt-get -f install
+   27  RUN apt-get update && apt-get install 
+   28  sudo apt-get update && apt-get install 
+   29  sudo apt-get update
+   30  sudo apt-get dist-upgrade
+   31  sudo apt-get -f install  skype 
+   32  sudo apt-get -f install
+   33  skype
+   34  clear
+   35  sudo apt-get update
+   36  sudo apt -get purge skype
+   37  sudo apt-get purge skype
+   38  sudo apt-get update
+   39  ls -l
+   40  mkdir git
+   41  git status
+   42  git --verson
+   43  git --v
+   44  sudo apt install git
+   45  git status
+   46  ls
+   47  mkdir demo
+   48  cd demo/
+   49  git init
+   50  git status
+   51  ls -l
+   52  subl ,
+   53  sudo add-apt-repository ppa:eugenesan/ppa
+   54  sudo apt-get update
+   55  sudo apt-get install smartgit
+   56  wget -qO -https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+   57  sudo apt -key add gpg
+   58  sudo add-apt-repository ppa:webupd8team/y-ppa-manager
+   59  cd Desktop
+   60  cd Backup
+   61  ls
+   62  cd Training
+   63  ls
+   64  cd result
+   65  git init
+   66  git add README.md
+   67  git commit -m "first commit"
+   68  git remote add origin https://github.com/komal-kanada/demo.git
+   69  git config --global user.name "koaml-kanada"
+   70  git config --global user.email "komal.kanada@bacancytechnology.com"
+   71  git config --global user.name "komal-kanada"
+   72  git add .
+   73  git status
+   74  git commit
+   75  git commit -m "second commit"
+   76  git push origin master
+   77  history->history.txt
+   78  history > history_for_print.txt
